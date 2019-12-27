@@ -43,7 +43,11 @@
 						</nav>
 						<!-- /nav -->
 				<!-- </div>.wrapper -->
-				<?php the_post_thumbnail(); ?>
+
+				<?php $featured = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+				<?php $featured = $featured[0]; ?>
+
+				<div class="featuredImage" style="background-image: url(<?php echo $featured ?>);"></div>
 			</header>
 			<!-- /header -->
 
