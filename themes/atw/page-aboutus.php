@@ -25,12 +25,16 @@ get_header(); ?>
 			<div class="about-us-images">
 
 				<?php if( get_field('image_1') ) {?>
-				<img src="<?php the_field('image_1'); ?>" >
-				<?php } ?>
+				<div class="photo">					
+					<img src="<?php the_field('image_1'); ?>" >					
+				</div>
+			    <?php } ?>
 
 				<?php if( get_field('image_2') ) {?>
-				<img src="<?php the_field('image_2'); ?>" >
-				<?php } ?>
+				<div class="photo">					
+					<img src="<?php the_field('image_2'); ?>" >				
+				</div>
+				<?php } ?>			
 
 			</div>
 
