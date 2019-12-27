@@ -32,6 +32,22 @@ get_header(); ?>
                         <a href="<?php the_permalink(); ?>" class="more-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/moreinfo.png" alt="">
                         </a>
+                    </div><!-- featured-tour -->
+                    <a href="<?php the_permalink(); ?>">
+                    <h3><?php the_title(); ?></h3>
+                    </a>
+                    <?php 
+                        //dates
+                        $format = 'd F, Y';
+                        $date = strtotime(get_field('departure_date'));
+                        $leavingDate = date_i18n($format, $date);
+
+                        $returnDate = strtotime(get_field('return_date'));
+                        $returnDate = date_i18n($format, $returnDate);
+                    ?>
+
+                    <div class="date-price">
+                        <p class="date"><?php echo $leavingDate ?></p>
                     </div>
                 </li>
 
