@@ -22,21 +22,24 @@ get_header(); ?>
 			</article>
 			<!-- /article -->
 
+			<!-- About Us Photo Section -->
 			<div class="about-us-images">
 
 				<?php if( get_field('image_1') ) {?>
 				<div class="photo">					
-					<img src="<?php the_field('image_1'); ?>" >					
+					<?php  $image_id = get_field('image_1'); ?>
+					<?php echo wp_get_attachment_image( $image_id, 'medium', false, array('class' => 'polariod') ); ?>								
 				</div>
-			    <?php } ?>
+			    <?php } ?>	
 
 				<?php if( get_field('image_2') ) {?>
 				<div class="photo">					
-					<img src="<?php the_field('image_2'); ?>" >				
+					<?php  $image_id = get_field('image_2'); ?>
+					<?php echo wp_get_attachment_image( $image_id, 'medium', false, array('class' => 'polariod') ); ?>								
 				</div>
-				<?php } ?>			
+			    <?php } ?>		
 
-			</div>
+			</div><!-- .about-us-images -->
 
 		<?php endwhile; ?>
 
