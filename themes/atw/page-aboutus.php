@@ -9,7 +9,7 @@ get_header(); ?>
 		<section>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
+			<h2><?php the_title(); ?></h2>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -22,6 +22,11 @@ get_header(); ?>
 			</article>
 			<!-- /article -->
 
+			<div class="about-us-images">
+				<img src="<?php the_field('image_1'); ?>" >
+				<img src="<?php the_field('image_2'); ?>" >
+			</div>
+
 		<?php endwhile; ?>
 
 		<?php else: ?>
@@ -32,7 +37,7 @@ get_header(); ?>
 				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
 			</article>
-			<!-- /article -->
+			<!-- /article -->			
 
 		<?php endif; ?>
 
