@@ -10,6 +10,7 @@ get_header(); ?>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+        <h2><span><?php the_title(); ?></span></h2>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -40,6 +41,5 @@ get_header(); ?>
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
