@@ -23,12 +23,21 @@ get_header(); ?>
                         'order'  => 'ASC',
                     );
                 ?>
+                <ul>
                 <?php $tours = new WP_Query($args); while($tours->have_posts() ): $tours->the_post(); ?>
-
-                <h3><?php the_title(); ?></h3>
+                    
+                <li>
+                    <div class="featured-tour">
+                        <?php the_post_thumbnail(); ?>
+                        <a href="<?php the_permalink(); ?>" class="more-info">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/moreinfo.png" alt="">
+                        </a>
+                    </div>
+                </li>
 
                 <?php endwhile; wp_reset_postdata(); ?>
-				<br class="clear">
+                </ul>
+                <br class="clear">
 
 				<?php edit_post_link(); ?>
 
