@@ -183,6 +183,35 @@ div.featuredImage {
     PAGES
 \*------------------------------------*/
 
+/* About Us */
+
+div.photo {
+	background-color: #fff;
+	display: block;
+	float: left;
+	width: auto;
+	margin: 0 0 27px 30px; 
+	padding: 10px 10px 15px 10px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0, 0.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0, 0.25);
+	box-shadow: 0 3px 6px rgba(0,0,0, 0.25);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+div.photo:nth-child(even) {
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+.polariod {
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0, .25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0, .25);
+	box-shadow: 0 3px 6px rgba(0,0,0, .25);
+	width: 100%;
+	height: auto;
+}
 
 
 /*------------------------------------*\
