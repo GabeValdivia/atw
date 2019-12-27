@@ -43,6 +43,7 @@
 						</nav>
 						<!-- /nav -->
 				<!-- </div>.wrapper -->
+				<?php the_post_thumbnail(); ?>
 			</header>
 			<!-- /header -->
 
