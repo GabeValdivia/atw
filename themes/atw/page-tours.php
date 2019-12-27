@@ -28,7 +28,7 @@ get_header(); ?>
                     
                 <li>
                     <div class="featured-tour">
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('featuredTour'); ?>
                         <a href="<?php the_permalink(); ?>" class="more-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/moreinfo.png" alt="">
                         </a>
