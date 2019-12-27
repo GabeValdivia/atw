@@ -47,7 +47,12 @@ get_header(); ?>
                     ?>
 
                     <div class="date-price">
-                        <p class="date"><?php echo $leavingDate ?></p>
+                        <p class="date"><?php echo $leavingDate . ' - ' . $returnDate ?></p>
+                        <p class="price">$<?php the_field('price'); ?></p>
+                    </div><!--.date-price-->
+
+                    <div class="tour-description">
+                        <?php the_field('brief_list');?>
                     </div>
                 </li>
 
