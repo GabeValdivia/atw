@@ -30,8 +30,8 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#444;
+	font:300 16px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#000;
 }
 /* clear */
 .clear:before,
@@ -182,6 +182,21 @@ div.featuredImage {
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
+h2 {
+	color: #e1800d;
+	font-size: 28px;
+	font-size: 2.8rem;
+	text-align: center;
+	font-size: normal;
+	background-image: url(img/titleBG.png);
+	background-repeat: repeat-x;
+	background-position: center center;
+}
+
+h2 span {
+	background-color: #fff;
+	padding: 0 25px;
+}
 
 /* About Us */
 
