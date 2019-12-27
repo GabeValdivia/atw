@@ -23,8 +23,15 @@ get_header(); ?>
 			<!-- /article -->
 
 			<div class="about-us-images">
+
+				<?php if( get_field('image_1') ) {?>
 				<img src="<?php the_field('image_1'); ?>" >
+				<?php } ?>
+
+				<?php if( get_field('image_2') ) {?>
 				<img src="<?php the_field('image_2'); ?>" >
+				<?php } ?>
+
 			</div>
 
 		<?php endwhile; ?>
