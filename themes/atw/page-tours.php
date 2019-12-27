@@ -14,8 +14,20 @@ get_header(); ?>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php the_content(); ?>
+                
+                <?php
+                    $args = array(
+                        'post_type' => 'my_tours',
+                        'posts_per_page' => -1,
+                        'orderby' => 'title',
+                        'order'  => 'ASC',
+                    );
+                ?>
+                <?php $tours = new WP_Query($args); while($tours->have_posts() ): $tours->the_post(); ?>
 
+                <h3><?php the_title(); ?></h3>
+
+                <?php endwhile; wp_reset_postdata(); ?>
 				<br class="clear">
 
 				<?php edit_post_link(); ?>
