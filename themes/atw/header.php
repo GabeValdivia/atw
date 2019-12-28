@@ -50,9 +50,15 @@
 				</div><!-- .navcanvas -->
 			</header><!-- /header -->
 
-			<?php $featured = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
-			<?php $featured = $featured[0]; ?>
-			
+		<?php if(is_home() && get_option('page_for_posts')) { ?>
+			<?php $featured = wp_get_attachment_image_src( get_post_thumbnail_id(get_option('page_for_posts')), 'full'); ?>
+			<?php $featured = $featured[0]; ?>			
 			<div class="featuredImage" style="background-image: url(<?php echo $featured ?>);"></div>
+		<?php } else { ?>
+			<?php $featured = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+			<?php $featured = $featured[0]; ?>			
+			<div class="featuredImage" style="background-image: url(<?php echo $featured ?>);"></div>
+
+		<?php } ?>
 		<!-- wrapper -->
 		<div class="wrapper">
