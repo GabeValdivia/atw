@@ -21,7 +21,34 @@ get_header(); ?>
 				<?php edit_post_link(); ?>
 
 			</article>
-			<!-- /article -->
+            <!-- /article -->
+            
+            <div class="testimonial-section">
+            <?php
+                    $args = array(
+                        'post_type' => 'testimonial',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order'  => 'DESC',
+                    );
+                ?>
+                <ul class="testimonial-list">
+                    <?php $testimonial = new WP_Query($args); while($testimonial->have_posts() ): $testimonial->the_post(); ?>    
+
+                    <li>
+                        <h3><?php the_title(); ?></h3>
+                        <div class="testimonial-content">
+                        <?php the_content(); ?>
+                        </div>
+                        <div class="from-testimonial">
+                            <p><?php the_field('person_name'); ?></p>
+                            <p><?php the_field('from'); ?></p>
+                        </div>
+                    </li>
+
+                    <?php endwhile; wp_reset_postdata(); ?>
+                </ul>                
+            </div>
 
 		<?php endwhile; ?>
 
