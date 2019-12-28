@@ -249,6 +249,16 @@ ul.tours li a h3 {
 	color: #e1800d;
 }
 
+ul.tours li .featured-tour {
+	position: relative;
+}
+
+ul.tours li .featured-tour  .more-info{
+	position: absolute;
+	top: 16px;
+	right: -12px;
+	width: 112px;
+}
 /* Grid */
 
 [class*='grid'] {
@@ -270,6 +280,10 @@ ul.tours li a h3 {
 @media only screen and (min-width: 768px) {
 	.grid1-3 {
 		width: 33.3%;
+	}
+
+	.grid2-4 {
+		width: 50%;
 	}
 	
 	.grid2-3 {

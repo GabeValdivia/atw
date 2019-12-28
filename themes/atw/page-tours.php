@@ -26,7 +26,7 @@ get_header(); ?>
                 <ul class="tours">
                 <?php $tours = new WP_Query($args); while($tours->have_posts() ): $tours->the_post(); ?>
                     
-                <li>
+                <li class="grid2-4">
                     <div class="featured-tour">
                         <?php the_post_thumbnail('featuredTour'); ?>
                         <a href="<?php the_permalink(); ?>" class="more-info">
