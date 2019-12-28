@@ -327,6 +327,26 @@ div.tour-information p {
 	color: #494949;
 }
 
+div.itinerary h3 {
+	font-size: 28px;
+	font-size: 2.8rem;
+	color: #e1800d;
+	text-align: center;
+	font-weight: normal;
+
+}
+
+div.itinerary h2 {
+	text-align: left;
+	background-image: none;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+div.itinerary p {
+	margin: 0;
+}
+
 
 
 
