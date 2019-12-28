@@ -23,7 +23,7 @@ get_header(); ?>
                         'order'  => 'ASC',
                     );
                 ?>
-                <ul>
+                <ul class="tours">
                 <?php $tours = new WP_Query($args); while($tours->have_posts() ): $tours->the_post(); ?>
                     
                 <li>
