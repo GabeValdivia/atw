@@ -370,8 +370,35 @@ div.itinerary p {
 .gallery br {
 	display: none;
 }
-/* Grid */
 
+/* Testimonials Page Template */
+blockquote {
+	border-left: 20px solid #e1800d;
+	padding: 6px 0 10px 10px;
+	font-size: 24px;
+	color: #444;
+}
+
+blockquote p {
+	margin: 14px 0;
+}
+
+.testimonial-list li h3 {
+	color: #fff;
+	background-color: #e1800d;
+	padding: 5px 20px;
+	font-weight: normal;
+}
+
+.testimonial-list li {
+	background-color: #fefaf5;
+	border-left: 1px solid #a8a8a8;
+	border-right: 1px solid #a8a8a8;
+	border-bottom: 1px solid #a8a8a8;
+
+}
+
+/* Grid */
 [class*='grid'] {
 	position: relative;
 	padding: 0 20px 0 0;

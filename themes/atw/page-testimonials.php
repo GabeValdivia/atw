@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<h2><span><?php the_title(); ?></span></h2>
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-3'); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
 
