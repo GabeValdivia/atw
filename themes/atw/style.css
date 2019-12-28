@@ -315,7 +315,17 @@ ul.tours li .tour-description ul li {
 }
 
  /* Single Tours Post */
+div.tour-information {
+	background-color: #e3e3e3;
+	padding: 20px;
+	border: 1px solid #c0c0c0;
+	margin-top: 20px;
+}
 
+div.tour-information p {
+	margin: 0 20px 0 0;
+	color: #494949;
+}
 
 
 
