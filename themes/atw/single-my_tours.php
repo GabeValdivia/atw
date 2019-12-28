@@ -53,6 +53,7 @@
         
         <aside class="grid1-3">
                 <h3>Gallery</h3>
+                <?php the_content(); ?>
         </aside>
 
 	<?php endwhile; ?>
