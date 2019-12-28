@@ -4,7 +4,7 @@
 		
 		'use strict';
 		
-		// DOM ready, take it away
+		jQuery(".gallery .gallery-item a").fancybox();
 		
 	});
 	

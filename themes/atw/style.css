@@ -21,8 +21,8 @@
 *:before {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	font-smoothing:antialiased;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 	text-rendering:optimizeLegibility;
 }
 /* html element 62.5% font-size for REM use */
@@ -186,9 +186,7 @@ div.featuredImage::after {
 	background-color: rgba(223, 121, 0, .75);
 }
 /* sidebar */
-.sidebar {
 
-}
 /* footer */
 .footer {
 
@@ -502,12 +500,12 @@ a img.aligncenter {
 	margin:0;
 	padding:0 4px 5px;
 }
-.sticky {
+/* .sticky {
 
 }
 .bypostauthor {
 
-}
+} */
 
 /*------------------------------------*\
     PRINT
