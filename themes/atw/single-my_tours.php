@@ -6,13 +6,13 @@
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            
-            <!-- post title -->
-            <h2><span><?php the_title(); ?><span></h2>
-            <!-- /post title -->
+        <!-- post title -->
+        <h2><span><?php the_title(); ?><span></h2>
+        <!-- /post title -->
 
+		<!-- article -->
+		<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-3'); ?>>
+            
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 				
@@ -38,13 +38,22 @@
                 <p><strong>Price:</strong> $<?php the_field('price'); ?></p>
             </div>
 
+            <div class="itinerary">
+                <h3>Travel Itinerary</h3>
+                <?php the_field('travel_itinerary'); ?>
+            </div>
+
             <?php the_content(); // Dynamic Content ?>
             
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
 
 		</article>
-		<!-- /article -->
+        <!-- /article -->
+        
+        <aside class="grid1-3">
+                <h3>Gallery</h3>
+        </aside>
 
 	<?php endwhile; ?>
 
