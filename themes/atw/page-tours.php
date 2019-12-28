@@ -46,7 +46,7 @@ get_header(); ?>
                         $returnDate = date_i18n($format, $returnDate);
                     ?>
 
-                    <div class="date-price">
+                    <div class="date-price clear">
                         <p class="date"><?php echo $leavingDate . ' - ' . $returnDate ?></p>
                         <p class="price">$<?php the_field('price'); ?></p>
                     </div><!--.date-price-->

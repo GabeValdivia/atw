@@ -281,6 +281,23 @@ ul.tours li .date-price p.price {
 	color: #e1800d;
 	font-weight: bold;
 }
+
+ul.tours li .tour-description ul {
+	list-style-type: none;
+}
+
+ul.tours li .tour-description ul li:before {
+	content: '-';
+	position: relative;
+	left: -5px
+}
+
+ul.tours li .tour-description ul li {
+	text-indent: -5px;
+	margin: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
 /* Grid */
 
 [class*='grid'] {
