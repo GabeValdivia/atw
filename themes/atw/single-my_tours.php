@@ -42,8 +42,6 @@
                 <h3>Travel Itinerary</h3>
                 <?php the_field('travel_itinerary'); ?>
             </div>
-
-            <?php the_content(); // Dynamic Content ?>
             
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 

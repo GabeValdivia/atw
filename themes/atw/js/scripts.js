@@ -4,7 +4,9 @@
 		
 		'use strict';
 		
-		jQuery(".gallery .gallery-item a").fancybox();
+		jQuery(".gallery .gallery-item a").fancybox({
+			openEffect: 'fade'
+		});
 		
 	});
 	
