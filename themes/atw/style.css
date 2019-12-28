@@ -245,6 +245,10 @@ ul.tours li h3 {
 	font-size: 2rem;
 }
 
+ul.tours li p {
+	color: #5d5d5d;
+}
+
 ul.tours li a h3 {
 	color: #e1800d;
 }
@@ -253,16 +257,33 @@ ul.tours li .featured-tour {
 	position: relative;
 }
 
-ul.tours li .featured-tour  .more-info{
+ul.tours li .featured-tour .more-info{
 	position: absolute;
 	top: 16px;
 	right: -12px;
 	width: 112px;
 }
+
+ul.tours li .date-price p.date {
+	float: left;
+	width: 60%;
+	margin-left: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+ul.tours li .date-price p.price {
+	float: right;
+	width: 30%;
+	text-align: right;
+	color: #e1800d;
+	font-weight: bold;
+}
 /* Grid */
 
 [class*='grid'] {
-	float: left;
 	position: relative;
 	padding: 0 20px 0 0;
 }
@@ -278,6 +299,10 @@ ul.tours li .featured-tour  .more-info{
 }
 
 @media only screen and (min-width: 768px) {
+	[class*='grid'] {
+		float: left;
+	}
+
 	.grid1-3 {
 		width: 33.3%;
 	}
