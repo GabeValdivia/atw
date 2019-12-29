@@ -9,14 +9,6 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<!-- post thumbnail -->
-			<?php //if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<!-- <a href="<?php //the_permalink(); ?>" title="<?php //the_title(); ?>">
-					<?php //the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a> -->
-			<?php //endif; ?>
-			<!-- /post thumbnail -->
-
 			<!-- post title -->
 			<h2><span><?php the_title(); ?></span></h2>
 			<!-- /post title -->
@@ -28,6 +20,11 @@
 					<p><span class="author"><strong><?php _e( 'by:', 'html5blank' ); ?></strong> <?php the_author_posts_link(); ?></span></p>
 					<p><strong><?php _e( 'Category: ', 'html5blank' ); ?></strong><?php the_category(', '); // Separated by commas ?></p>					
 					<!-- /post details -->
+					<div class="share-buttons">
+						<p>Share:</p>
+						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e0803df29295018"></script>
+						<div class="addthis_inline_share_toolbox"></div> 
+					</div>
 				</div><!-- .grid1-3-->
 				<div class="grid2-3 single-post-content">
 					<?php the_content(); // Dynamic Content ?>

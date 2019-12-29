@@ -480,11 +480,14 @@ article.post .post-information.blog-post-details p {
 	article.post .grid2-3.single-post-content p:first-of-type {
 		margin-top: 0;
 	}
+}
 
-	/*Hide featured image to avoid repeated image one on top of the other */
-	article.post .attachment-post-thumbnail {
-		display: none;
-	}
+.share-buttons {
+	margin-top: 30px;
+}
+
+.share-buttons p {
+	color: #e1800d;
 }
 
 /* Grid */
