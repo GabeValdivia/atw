@@ -490,6 +490,17 @@ article.post .post-information.blog-post-details p {
 	color: #e1800d;
 }
 
+/* Contact Us Page */
+.wpcf7-form {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px)  {
+	.wpcf7-form {
+		width: 50%;
+	}
+}
+
 /* Grid */
 [class*='grid'] {
 	position: relative;
