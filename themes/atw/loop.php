@@ -16,11 +16,12 @@ while (have_posts()) : the_post(); ?>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 			<div class="clear">
-				<div class="grid1-3">
+				<div class="grid1-3 post-information">
 					<!-- post details -->
-					<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-					<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-					<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+					<p><span class="date"><strong><?php _e( 'Published:', 'html5blank' ); ?></strong>  <?php the_time('F j, Y'); ?></span></p>
+					<p><span class="author"><strong><?php _e( 'by:', 'html5blank' ); ?></strong> <?php the_author_posts_link(); ?></span></p>
+					<p><strong><?php _e( 'Category: ', 'html5blank' ); ?></strong><?php the_category(', '); // Separated by commas ?></p>
+					
 					<!-- /post details -->
 				</div><!-- .grid1-3-->
 				<div class="grid2-3">
@@ -32,7 +33,7 @@ while (have_posts()) : the_post(); ?>
 					<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 				</div><!-- .grid2-3-->
 			</div><!--.clear-->			
-			<?php edit_post_link(); ?>
+			<?php //edit_post_link(); ?>
 		</article>
 		<!-- /article -->
 
@@ -61,7 +62,7 @@ while (have_posts()) : the_post(); ?>
 					<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 				</div><!-- .grid2-3-->
 			</div><!--.clear-->			
-			<?php edit_post_link(); ?>
+			<?php //edit_post_link(); ?>
 		</article>
 		<!-- /article -->
 	<?php } ?><!-- End if/else statement -->
