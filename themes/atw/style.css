@@ -170,9 +170,9 @@ div.featuredImage {
 	height: 300px;
 	width: 100%;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
-	background-position: bottom center;
+	background-position: center center;
 	
 }
 
@@ -460,13 +460,31 @@ article.post a {
 }
 
 article.post .post-information {
-	text-align: right;
 	margin-top: 8px;
 	color: #5e5e5e;
 }
 
-article.post .post-information p {
+@media only screen and (min-width: 768px) {
+	article.post .post-information {
+		text-align: right;
+		margin-bottom: 30px;
+	}
+}
+
+article.post .post-information,
+article.post .post-information.blog-post-details p {
 	margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	article.post .grid2-3.single-post-content p:first-of-type {
+		margin-top: 0;
+	}
+
+	/*Hide featured image to avoid repeated image one on top of the other */
+	article.post .attachment-post-thumbnail {
+		display: none;
+	}
 }
 
 /* Grid */

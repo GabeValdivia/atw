@@ -16,7 +16,7 @@ while (have_posts()) : the_post(); ?>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 			<div class="clear">
-				<div class="grid1-3 post-information">
+				<div class="grid1-3 post-information blog-post-details">
 					<!-- post details -->
 					<p><span class="date"><strong><?php _e( 'Published:', 'html5blank' ); ?></strong>  <?php the_time('F j, Y'); ?></span></p>
 					<p><span class="author"><strong><?php _e( 'by:', 'html5blank' ); ?></strong> <?php the_author_posts_link(); ?></span></p>
