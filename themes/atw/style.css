@@ -234,6 +234,13 @@ div.photo:nth-child(even) {
 	transform: rotate(10deg);
 	margin-top: -30px;
 }
+
+.post .photo {
+	-webkit-transform: none;
+	-moz-transform: none;
+	transform: none;
+}
+
 .polariod {
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0, .25);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0, .25);

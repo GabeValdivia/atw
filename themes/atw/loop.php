@@ -8,9 +8,11 @@ while (have_posts()) : the_post(); ?>
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail('featuredBlog'); // Declare pixel size you need inside the array ?>
-				</a>
+				<div class="photo">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php the_post_thumbnail('featuredBlog', array('class' => 'polariod')); // Declare pixel size you need inside the array ?>
+					</a>
+				</div>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 			<div class="clear">
@@ -41,12 +43,14 @@ while (have_posts()) : the_post(); ?>
 			<div class="clear">
 				<div class="grid1-3">
 					<!-- post thumbnail -->
-					<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail('medium'); // Declare pixel size you need inside the array ?>
-						</a>
-					<?php endif; ?>
-					<!-- /post thumbnail -->
+					<div class="photo">
+						<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<?php the_post_thumbnail('medium', array('class' => 'polariod')); // Declare pixel size you need inside the array ?>
+							</a>
+						<?php endif; ?>
+						<!-- /post thumbnail -->
+					</div>
 				</div><!-- .grid1-3-->
 				<div class="grid2-3">
 					<!-- post title -->
