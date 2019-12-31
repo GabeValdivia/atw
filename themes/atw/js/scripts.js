@@ -7,6 +7,10 @@
 		jQuery(".gallery .gallery-item a").fancybox({
 			openEffect: 'fade'
 		});
+
+		jQuery('ul.slider').bxSlider({
+
+		});
 		
 	});
 	
