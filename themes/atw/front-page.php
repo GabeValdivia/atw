@@ -55,7 +55,7 @@
             <?php 
                 $args = array (
                     'post_type' => 'post',
-                    'posts_per_page' => 2
+                    'posts_per_page' => 3
                 );
                 $tips = new WP_Query($args);
                 while($tips->have_posts() ): $tips->the_post();
