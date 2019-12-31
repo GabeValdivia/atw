@@ -163,7 +163,7 @@ function html5blank_header_scripts()
         wp_enqueue_script('fancybox'); // Enqueue it!      
         
         wp_register_script('picturefill', get_template_directory_uri() . '/js/picturefill.js', array(), '3.0.2'); // PictureFillJS
-        wp_enqueue_script('picturefill'); // Enqueue it!  
+        wp_enqueue_script('picturefill'); // Enqueue it!
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
@@ -182,16 +182,19 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all'); // Normalize Styles
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('fancyboxcss', get_template_directory_uri() . '/css/jquery.fancybox.css', array(), '2.1.5', 'all');
+    wp_register_style('fancyboxcss', get_template_directory_uri() . '/css/jquery.fancybox.css', array(), '2.1.5', 'all'); // Fancybox Styles
     wp_enqueue_style('fancyboxcss'); // Enqueue it!
 
-    wp_register_style('bxslidercss', get_template_directory_uri() . '/css/jquery.bxslider.css', array(), '4.2.12', 'all');
-    wp_enqueue_style('bxslidercss'); // Enqueue it!    
+    wp_register_style('bxslidercss', get_template_directory_uri() . '/css/jquery.bxslider.css', array(), '4.2.12', 'all');// Bxslider Styles
+    wp_enqueue_style('bxslidercss'); // Enqueue it!
+    
+    wp_register_style('pontanoFont', 'https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap', array(), '1.0.0', 'all'); // Pontano Font
+    wp_enqueue_style('pontanoFont'); // Enqueue it!  
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all'); //HTML5Blank Styles
     wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
