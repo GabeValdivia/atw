@@ -9,7 +9,9 @@
 		});
 
 		jQuery('ul.slider').bxSlider({
-			pager: false
+			pager: false,
+			auto: true,
+			keyboardEnabled: true
 		});
 		
 	});
