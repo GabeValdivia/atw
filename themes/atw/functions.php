@@ -9,6 +9,12 @@
 	External Modules/Files
 \*------------------------------------*/
 
+/*** WIDGETS ***/
+
+if(file_exists(dirname(__FILE__) . '/inc/widgets.php')) {
+    require_once dirname(__FILE__) . '/inc/widgets.php';
+}
+
 function slider() {
     $args = array(
         'post_type' => 'slider',
