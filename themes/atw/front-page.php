@@ -19,7 +19,7 @@
                 <div class="img">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/moreinfo.png" alt="" class="more">
                     <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('tourFront') ?>
+                        <?php my_responsive_thumbnail(get_the_ID()); ?>
                     </a>
                 </div>
 
