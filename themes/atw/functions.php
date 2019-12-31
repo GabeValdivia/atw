@@ -49,11 +49,13 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
+    add_image_size('tourFront', 430, 300, true); // Front page 'Upcoming Tours' post thumbnail size
     add_image_size('medium', 350, 250, true); // Medium Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-    add_image_size('featuredTour', 730, 390, true);
-    add_image_size('featuredBlog', 1280, 444, true);
-    add_image_size('slider', 1500, 500, true);
+    add_image_size('featuredTour', 730, 390, true); // Tours page featured image -- the big one
+    add_image_size('featuredBlog', 1280, 444, true); // Blog Page featured image on top -- the big one
+    add_image_size('slider', 1500, 500, true); //Homepage slider image size
+    
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     add_theme_support('custom-background', array(
