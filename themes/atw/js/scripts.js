@@ -9,7 +9,7 @@
 		});
 
 		jQuery('ul.slider').bxSlider({
-
+			pager: false
 		});
 		
 	});

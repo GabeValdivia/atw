@@ -58,6 +58,7 @@
 		<?php elseif (is_front_page()): ?>
 
 			<section class="slider">
+				<?php //@functions.php:12 ?>
 				<?php do_action('slider_index'); ?>
 			</section>
 

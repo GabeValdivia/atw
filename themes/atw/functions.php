@@ -25,9 +25,7 @@ function slider() {
     echo "<a href='$link'>";
     the_post_thumbnail('slider');
     echo "</a>";
-
     echo "</li>";
-
     endwhile; wp_reset_postdata(); 
     echo "</ul>";
 }
