@@ -579,6 +579,11 @@ section.slider .bx-wrapper {
 .upcoming-tours ul {
 	padding: 0;
 	list-style: none;
+
+}
+
+.upcoming-tours ul li {
+	margin-bottom: 20px;
 }
 
 .upcoming-tours div.image {
@@ -604,6 +609,48 @@ section.slider .bx-wrapper {
 	text-align: center;
 	margin: 0;
 }
+
+/* Travel Tips Section on Homepage */
+.latest-entries ul {
+	padding: 0;
+	list-style: none;
+}
+
+.latest-entries ul li {
+	margin-bottom: 30px;
+}
+
+.latest-entries ul li h3 {
+	margin: 0;
+	font-size: 22px;
+	font-size: 2.2rem;
+	color: #e1800d;
+	font-weight: normal;
+}
+
+.latest-entries ul li p {
+	margin: 0;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.latest-entries ul li a.view-article {
+	background-color: #e1800d;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 15px;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	width: 40%;
+	margin-top: 10px;
+	border-radius: 10px;
+	transition: background-color .5s ease;
+}
+
+.latest-entries ul li a.view-article:hover {
+	background-color: #d57403;
+} 
 
 /* Grid */
 [class*='grid'] {
