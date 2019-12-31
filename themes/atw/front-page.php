@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <!-- Upcoming Tours Section -->
     <section class="upcoming-tours">
         <h2><span>Upcoming Travel</span></h2>
         <?php 
@@ -46,5 +46,42 @@
             <?php endwhile; wp_reset_postdata(); ?>
         </ul>
     </section>
+    <!-- Travel Tips from Our Blog Section & Testimonials -->
+    <div class="bottom-content">
+        <section class="latest-entries grid2-3">
+            <h2><span>Travel Tips From Our Blog</span></h2>
+
+            <ul>
+            <?php 
+                $args = array (
+                    'post_type' => 'post',
+                    'posts_per_page' => 2
+                );
+                $tips = new WP_Query($args);
+                while($tips->have_posts() ): $tips->the_post();
+                ?>
+
+                <li class="clear">
+
+                    <div class="imagetips grid1-3">
+                        <?php the_post_thumbnail('medium'); ?>
+                    </div><!-- .imagetips -->
+
+                    <div class="content-tip grid2-3 omega">
+                        <h3><?php the_title(); ?></h3>
+                        <?php html5wp_excerpt('html5wp_custom_post'); ?>
+                    </div>
+
+                </li>
+
+            <?php endwhile; wp_reset_postdata(); ?>
+
+            </ul>
+        </section>
+        <section class="latest-testimonials grid1-3">
+            <h2><span>Testimonials</span></h2>
+        </section>
+    </div>
+
 
 <?php get_footer(); ?>
