@@ -16,11 +16,12 @@
             <?php while($tours->have_posts()): $tours->the_post(); ?>
 
             <li class="grid1-3">
-                <div class="img">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/moreinfo.png" alt="" class="more">
-                    <a href="<?php the_permalink(); ?>">
+                <div class="image">
+                        <a href="<?php the_permalink(); ?>">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/moreinfo.png" alt="" class="more">
+                        </a>
                         <?php my_responsive_thumbnail(get_the_ID()); ?>
-                    </a>
+                    
                 </div>
 
                 <div class="content-tours">

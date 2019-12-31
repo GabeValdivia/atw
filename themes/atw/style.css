@@ -574,6 +574,37 @@ section.slider .bx-wrapper {
 	background-position: 0 0 !important;
 }
 
+/* Upcoming Tours - Homepage */
+
+.upcoming-tours ul {
+	padding: 0;
+	list-style: none;
+}
+
+.upcoming-tours div.image {
+	position: relative;
+}
+
+.upcoming-tours div.image .more {
+	position: absolute;
+	width: 110px;
+	top: 15px;
+	right: -13px;
+}
+
+.upcoming-tours div.content-tours {
+	background-color: #e1800d;
+	padding: 10px 0;
+}
+
+.upcoming-tours div.content-tours h3,
+.upcoming-tours div.content-tours p,
+.upcoming-tours div.content-tours a {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}
+
 /* Grid */
 [class*='grid'] {
 	position: relative;

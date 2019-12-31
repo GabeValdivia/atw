@@ -57,7 +57,7 @@ function my_responsive_thumbnail($post_id){
     echo '<source srcset="' . $thumb_data['thumb_large'] . ', ' . $thumb_data['thumb_large'] . ' " media="(min-width: 800px)">';
     echo '<source srcset="' . $thumb_data['thumb_medium'] . ', ' . $thumb_data['thumb_medium'] . ' ">';
     echo '<!--[if IE 9]></video><![endif]-->'; // Fallback for IE9
-    echo '<img srcset="' . $thumb_data['thumb_large'] . ', ' . $thumb_data['thumb_large'] .' " >';
+    echo '<img srcset="' . $thumb_data['thumb_large'] . ', ' . $thumb_data['thumb_large'] .' ">';
     echo '</picture>';
     }
     
