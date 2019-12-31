@@ -58,7 +58,7 @@
 		<?php elseif (is_front_page()): ?>
 
 			<section class="slider">
-				<h1>Is Front Page!!!!</h1>
+				<?php do_action('slider_index'); ?>
 			</section>
 
 			<?php else : ?>

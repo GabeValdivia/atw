@@ -9,6 +9,11 @@
 	External Modules/Files
 \*------------------------------------*/
 
+function slider() {
+    echo "<h1>Hello Slide Fans!</h1>";
+}
+add_action('slider_index', 'slider');
+
 // Load any external files you have here
 
 /*------------------------------------*\
