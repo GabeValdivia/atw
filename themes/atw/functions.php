@@ -85,7 +85,7 @@ if (function_exists('add_theme_support'))
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
     add_image_size('featuredTour', 730, 390, true); // Tours page featured image -- the big one
     add_image_size('featuredBlog', 1280, 444, true); // Blog Page featured image on top -- the big one
-    add_image_size('slider', 1500, 500, true); //Homepage slider image size
+    add_image_size('slider', 2000, 500, true); //Homepage slider image size
     
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
