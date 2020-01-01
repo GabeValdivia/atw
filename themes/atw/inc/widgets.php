@@ -10,8 +10,8 @@ class UpcomingTours extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'upcoming_tours', // Base ID
-			esc_html__( 'ATW Upcoming Tours', 'text_domain' ), // Name
-			array( 'description' => esc_html__( 'Show 2 upcoming tours', 'text_domain' ), ) // Args
+			__( 'ATW Upcoming Tours', 'text_domain' ), // Name
+			array( 'description' => __( 'Show 2 upcoming tours', 'text_domain' ), ) // Args
 		);
 	}
 
@@ -99,13 +99,7 @@ function register_upcoming_tours() {
 }
 add_action( 'widgets_init', 'register_upcoming_tours' );
 
-?>
 
-<!-- ==================================================================================================================
-RANDOM TRAVEL TIPS WIDGET - FOOTER
-  ===================================================================================================================== -->
-
-<?php
 /**
  * Adds Travel Tips widget.
  */
@@ -117,8 +111,8 @@ class RandmonTravelTips extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'travel_tips', // Base ID
-			esc_html__( 'ATW Travel Tips', 'text_domain' ), // Name
-			array( 'description' => esc_html__( 'Show 2 random tips for travel', 'text_domain' ), ) // Args
+			__( 'ATW Travel Tips', 'text_domain' ), // Name
+			array( 'description' => __( 'Show 2 random tips for travel', 'text_domain' ), ) // Args
 		);
 	}
 
