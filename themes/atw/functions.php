@@ -9,6 +9,14 @@
 	External Modules/Files
 \*------------------------------------*/
 
+/*** Login Styles ***/
+function admin_styles(){
+    wp_enqueue_style('logincss', get_template_directory_uri() . '/login/css/loginStyles.css', false);
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('loginjs', get_template_directory_uri() . '/login/js/login.js', 'jquery', '1.0', true);
+}
+
+add_action('login_enqueue_scripts', 'admin_styles', 10 );
 /*** WIDGETS ***/
 
 if(file_exists(dirname(__FILE__) . '/inc/widgets.php')) {
