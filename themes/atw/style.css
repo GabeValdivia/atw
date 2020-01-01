@@ -154,6 +154,12 @@ ul.slicknav_nav li {
 	text-align: center;
 }
 
+@media only screen and (max-width: 890px) {
+	.nav ul li {
+		padding: 0 10px !important;
+	}
+}
+
 .nav ul li a,
 ul.slicknav_nav li a{
 	color: #fff;
@@ -161,7 +167,34 @@ ul.slicknav_nav li a{
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	display: inline-block;
+}
+
+@media only screen and (max-width: 890px) {
+	.nav ul li a {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	.logo {
+		width: 32%;
+	}
+
+	.nav {
+		width: 68%;
+	}
+}
+
+.slicknav_nav a:hover {
+	background-color: transparent;
+	color: #fff!important;
+}
+
+.slicknav_btn {
+	background-color: #df7900;
+}
+
+.slicknav_menu .slicknav_menutxt {
+	text-shadow: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -216,7 +249,7 @@ div.featuredImage::after {
 	margin: 20px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 890px) {
 	.search-form {
 		margin: 20px 0;
 		position: absolute;
@@ -708,6 +741,7 @@ section.slider .bx-wrapper {
 	left: 0;
 	box-shadow: none;
 	border: none;
+	margin-bottom: 0;
 }
 
 .bx-wrapper .bx-controls-direction a  {
