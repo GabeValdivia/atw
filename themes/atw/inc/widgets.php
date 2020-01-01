@@ -137,7 +137,7 @@ class RandmonTravelTips extends WP_Widget {
                 'order' =>'ASC'
             ); ?>
 
-            <ul class="blog-postS">
+            <ul class="blog-post">
                 <?php $post = new WP_Query($query); while($post->have_posts()): $post->the_post(); ?>
 
                     <li class="clear">
@@ -146,7 +146,7 @@ class RandmonTravelTips extends WP_Widget {
                         </div><!-- featured-tour -->
 
                         <div class="content-tour grid2-4 omega">
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                         </div><!-- .content-tour -->
 
 
@@ -238,7 +238,7 @@ class CouponsWidget extends WP_Widget {
                 'order' =>'DESC'
             ); ?>
 
-            <ul class="coupns">
+            <ul class="coupons">
                 <?php $coupons = new WP_Query($query); while($coupons->have_posts()): $coupons->the_post(); ?>
 
                     <li class="clear">

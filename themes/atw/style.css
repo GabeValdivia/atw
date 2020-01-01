@@ -69,6 +69,12 @@ input:focus {
 	border:1px solid #04A4CC;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -189,9 +195,77 @@ div.featuredImage::after {
 
 /* footer */
 .footer {
-
+	background-color: #323232;
+	border-top: 6px solid #df7900;
+	margin-top: 30px;
+	padding: 20px 0 0 0;
 }
 
+.footer h3,
+.footer .textwidget,
+.footer div h3 a {
+	color: #fff;
+}
+
+.footer div h3 {
+	margin: 0 0 20px 0;
+	font-weight: normal;
+	font-size: 22px;
+	font-size: 2.2rem;
+}
+
+.footer div h3 a {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.footer .content-tour h3 a {
+	font-weight: bold;
+	font-size: 22px!important;
+	font-size: 2.2rem !important;
+}
+
+
+.footer .widget_text .textwidget p,
+.footer div.widget_travel_tips ul.blog-post li .content-tour p a {
+	font-size: 14px;
+	margin: 0;
+	color: #F0F0F0;
+}
+
+.footer .wp-post-image {
+	border: 3px solid #464646;
+}
+
+.footer div.widget_upcoming_tours ul.blog-post li,
+.footer div.widget_travel_tips ul.blog-post li {
+	margin-bottom: 20px;
+}
+
+.footer #coupons_widget-2 h3 {
+	display: none
+}
+
+.footer .coupons li{
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin-top: 10px;
+	padding: 10px 0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#474747+6,474747+50,474747+100&0+22,1+51,0+84 */
+	background: -moz-linear-gradient(left,  rgba(71,71,71,0) 6%, rgba(71,71,71,0) 22%, rgba(71,71,71,0.97) 50%, rgba(71,71,71,1) 51%, rgba(71,71,71,0) 84%, rgba(71,71,71,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(71,71,71,0) 6%,rgba(71,71,71,0) 22%,rgba(71,71,71,0.97) 50%,rgba(71,71,71,1) 51%,rgba(71,71,71,0) 84%,rgba(71,71,71,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(71,71,71,0) 6%,rgba(71,71,71,0) 22%,rgba(71,71,71,0.97) 50%,rgba(71,71,71,1) 51%,rgba(71,71,71,0) 84%,rgba(71,71,71,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00474747', endColorstr='#00474747',GradientType=1 ); /* IE6-9 */
+}
+
+.copyright p {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin: 0;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
@@ -724,6 +798,10 @@ section.slider .bx-wrapper {
 @media only screen and (min-width: 768px) {
 	[class*='grid'] {
 		float: left;
+	}
+
+	.grid1-4 {
+		width: 25%;
 	}
 
 	.grid1-3 {

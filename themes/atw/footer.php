@@ -1,18 +1,22 @@
+			
+			</div>
+		<!-- /wrapper -->
 			<div class="clear"></div>
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-			<div class="footer-widget">
-				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-			</div>
-
+			<footer class="footer clear" role="contentinfo">
+				<div class="wrapper">
+					<div class="footer-widget">
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="copyright">
+					<p>All Right Reserved - Around the World <?php echo date('Y'); ?></p>
+				</div>
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
-
-		<?php wp_footer(); ?>
+			<?php wp_footer(); ?>
 
 		<!-- analytics -->
 		<script>
