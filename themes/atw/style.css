@@ -363,10 +363,11 @@ div.photo:nth-child(even) {
 	margin-top: -30px;
 }
 
-.post .photo {
-	-webkit-transform: none;
-	-moz-transform: none;
-	transform: none;
+.post .photo,
+.search div.photo {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
 }
 
 .polariod {
@@ -561,34 +562,34 @@ blockquote p {
 }
 
 /* Blog */
-article.post h3 {
+article {
 	margin-top: 0px;
 }
-article.post h3 a {
+article h3 a {
 	color: #e1800d;
 	font-size: 28px;
 	font-size: 2.8rem;
 	font-weight: normal;
 }
-article.post a {
+article a {
 	color: #e1800d;
 	font-weight: bold;
 }
 
-article.post .post-information {
+article .post-information {
 	margin-top: 8px;
 	color: #5e5e5e;
 }
 
 @media only screen and (min-width: 768px) {
-	article.post .post-information {
+	article .post-information {
 		text-align: right;
 		margin-bottom: 30px;
 	}
 }
 
-article.post .post-information,
-article.post .post-information.blog-post-details p {
+article .post-information,
+article .post-information.blog-post-details p {
 	margin: 0;
 }
 
