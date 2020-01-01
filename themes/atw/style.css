@@ -197,6 +197,54 @@ div.featuredImage::after {
 	width: 100%;
 	background-color: rgba(223, 121, 0, .75);
 }
+
+/* Search Form - in header.php:73 */
+.search-form {
+	margin: 20px 0;
+}
+
+.search-form form {
+	position: relative;
+}
+
+.search-form form input,
+.search-form form input:focus {
+	width: 100%;
+	border: 2px solid #e1e1e1;
+	border-radius: 10px;
+	height: 30px;
+	padding-left: 10px;
+}
+
+@media only screen and ( min-width: 768px ) {
+	.search-form form input {
+		width: 30%;
+		float: right;
+		-webkit-transition: width .3s ease-in-out;
+		-moz-transition: width .3s ease-in-out;
+		-o-transition: width .3s ease-in-out;
+		transition: width .3s ease-in-out;
+	}
+
+	.search-form form input:focus {
+		width: 50%;
+	}
+}
+
+.search-form form button.search-submit {
+	position: absolute;
+	top: 0;
+	right: -6px;
+	height: 36px;
+	background-color: #df7900;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 0 10px 10px 0;
+}
+
+
 /* sidebar */
 
 /* footer */

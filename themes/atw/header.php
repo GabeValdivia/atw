@@ -70,3 +70,6 @@
 		<?php endif ?>
 		<!-- wrapper -->
 		<div class="wrapper">
+	    <div class="search-form clear">
+			<?php get_template_part('searchform'); ?>
+		</div>
