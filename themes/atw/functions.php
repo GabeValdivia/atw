@@ -198,7 +198,10 @@ function html5blank_styles()
     wp_enqueue_style('bxslidercss'); // Enqueue it!
     
     wp_register_style('pontanoFont', 'https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap', array(), '1.0.0', 'all'); // Pontano Font
-    wp_enqueue_style('pontanoFont'); // Enqueue it!  
+    wp_enqueue_style('pontanoFont'); // Enqueue it! 
+
+    wp_register_style('LatoFont', 'https://fonts.googleapis.com/css?family=Font:700&display=swap', array(), '1.0.0', 'all'); // Lato Font
+    wp_enqueue_style('LatoFont'); // Enqueue Fontit!  
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all'); //HTML5Blank Styles
     wp_enqueue_style('html5blank'); // Enqueue it!
