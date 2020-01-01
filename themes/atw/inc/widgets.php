@@ -244,7 +244,7 @@ class CouponsWidget extends WP_Widget {
                     <li class="clear">
 					
                         <div class="content-coupon">
-                            <img src="<?php the_field('image'); ?>">
+							<img src="<?php the_field('image'); ?>">
                         </div> <!-- .content-coupon -->
 
 

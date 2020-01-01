@@ -13,6 +13,8 @@
 			auto: true,
 			keyboardEnabled: true
 		});
+
+		jQuery('header nav ul').slicknav();
 		
 	});
 	
