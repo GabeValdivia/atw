@@ -33,7 +33,7 @@
 
 				<!-- post title -->
 				<h2>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					<span><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></span>
 				</h2>
 				<!-- /Post title -->
 
