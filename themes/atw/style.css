@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5 {
 /* logo */
 .logo {
 	text-align: center;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 .logo-img {
 
@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5 {
 		float: left;
 		text-align: left;
 		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 	.logo-img {
 		max-height: 73px;
@@ -129,27 +130,32 @@ h1, h2, h3, h4, h5 {
 }
 /* nav */
 .nav {
-
+	display: none;
 }
 
-.nav ul {
+.nav ul,
+ul.slicknav_nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 .nav ul li:hover,
-.nav ul li.current_page_item {
+.nav ul li.current_page_item,
+ul.slicknav_nav li:hover,
+ul.slicknav_nav li.current_page_item{
 	background-color: #df7900;
 	transition: all .3s ease-in;
 }
 
-.nav ul li {
+.nav ul li,
+ul.slicknav_nav li {
 	padding: 12px 0;
 	text-align: center;
 }
 
-.nav ul li a {
+.nav ul li a,
+ul.slicknav_nav li a{
 	color: #fff;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -159,10 +165,16 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (min-width: 768px) {
+
+	div.slicknav_menu {
+		display: none;
+	}
+
 	.nav {
 		height: 73px;
 		width: 60%;
 		float: right;
+		display: block;
 	}
 
 	.nav ul {
