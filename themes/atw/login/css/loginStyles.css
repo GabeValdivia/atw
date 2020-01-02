@@ -27,8 +27,14 @@ body.login div#login {
 
 body.login div#login h1 {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     margin-top: 100px;
+}
+
+@media screen and (min-width:768px) {
+    body.login div#login h1 {
+      width: 50%;
+    }
 }
 
 body.login div#login h1 a {
@@ -41,7 +47,12 @@ body.login div#login h1 a {
 
 body.login div#login form#loginform {
     float: right;
-    width: 40%;
+}
+
+@media screen and ( min-width: 768px ) {
+    body.login div#login form#loginform {
+        max-width: 40%;
+    }
 }
 
 body.login div#login form#loginform p {
@@ -49,11 +60,12 @@ body.login div#login form#loginform p {
 }
 
 body.login div#login form#loginform p label {
-
+    color: #000000;
 }
 
 body.login div#login form#loginform input {
-
+    background: #fff;
+    border: 1px solid #000000;
 }
 
 body.login div#login form#loginform input#user_login {
@@ -77,7 +89,14 @@ body.login div#login form#loginform p.submit {
 }
 
 body.login div#login form#loginform p.submit input#wp-submit {
-
+    background-color: #000000;
+    border: none;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    height: auto;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 body.login div#login p#nav {
