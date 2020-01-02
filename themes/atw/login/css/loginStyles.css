@@ -9,7 +9,9 @@ body.login {
 body.login div#login {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 40px 30px;
-
+    border-radius: 15px;
+    -webkit-box-shadow: -3px 7px 35px rgba(0, 0, 0, 0.8);
+    box-shadow: -3px 7px 35px rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -102,21 +104,45 @@ body.login div#login form#loginform p.submit input#wp-submit {
 }
 
 body.login div#login p#nav {
+    text-align: center;
+}
 
+@media screen and ( min-width: 768px ) {
+    body.login div#login p#nav {
+        display: inline;
+    }
 }
 
 body.login div#login p#nav a {
-
+    color: #fff;
 }
 
 body.login div#login p#backtoblog {
-
+    text-align: center;
 }
 
-body.login div#login p#backtoblog a {}
+@media screen and ( min-width: 768px ) {
+    body.login div#login p#backtoblog {
+        display: inline;
+        float: right;
+        margin: 0;
+    }
+}
+
+body.login div#login p#backtoblog a {
+    color: #fff;
+}
+
+#login_error {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
 
 .group {
-
+    margin-bottom: 20px;
 }
 
 .group::after {
