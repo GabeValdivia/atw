@@ -1,4 +1,7 @@
 jQuery(function($){
+
+    jQuery('#login h1, #login form').wrapAll('<div class="group"></div>');
+
     jQuery('body').vegas({
         slides: [
             { src: login_images.theme_path + "/1.jpg"},

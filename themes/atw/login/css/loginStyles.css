@@ -76,8 +76,10 @@ body.login div#login form#loginform input#user_pass {
 
 }
 
-body.login div#login form#loginform p.forgetmenot {
-
+@media screen and ( min-width: 768px ) {
+    body.login div#login form#loginform p.forgetmenot {
+        margin-top: 8px;
+    }
 }
 
 body.login div#login form#loginform p.forgetmenot input#rememberme {
