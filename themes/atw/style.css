@@ -1,5 +1,5 @@
 /*
-		Theme Name: ATW Around the World
+		Theme Name: AVG Agencia de Viajes Gonzalez
 		Theme URI:
 		Description: HTML5 Mobile First for travel Agency
 		Version: 1.0
@@ -126,6 +126,7 @@ h1, h2, h3, h4, h5 {
 	}
 	.logo-img {
 		max-height: 73px;
+		padding: 10px 0;
 	}
 }
 /* nav */
